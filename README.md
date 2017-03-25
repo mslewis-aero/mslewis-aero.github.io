@@ -1,6 +1,1 @@
-mslewis-aero.github.io
-asdfasdf
-Testing
-
-testing from cloud 9
-test 2
+This is the website for the Knights of Columbus Council 13527
