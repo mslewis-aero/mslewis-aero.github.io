@@ -24,11 +24,17 @@
   //background-color: yellow;
 }
 
+.tight-list{
+  display: flex;
+  justify-content: left;
+  margin-left: 35%;
+}
+
 .padding{
   flex-grow: 1;
   //background-color: green;
 }
 
-li:hover{
+.navbar-item:hover{
   background-color: white;
 }
