@@ -48,3 +48,10 @@
   justify-content: center;
   //background-color: purple;
 }
+
+.navbar-flex{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
