@@ -6,7 +6,8 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/KoC_Emblem_black_noText.jpg') no-repeat center center fixed;
+    //background: url('../img/KoC_Emblem_black_noText.jpg') no-repeat center center fixed;
+    background: #2c3874;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -167,7 +168,9 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .navbar-nav>li>a {
