@@ -31,22 +31,24 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-    <script src='fullcalendar/lib/jquery.min.js'></script>
-    <script src='fullcalendar/lib/moment.min.js'></script>
-    <script src='fullcalendar/fullcalendar.js'></script>
-    <script type='text/javascript' src='fullcalendar/gcal.js'></script>
-    
-    <script type='text/javascript'>
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="fullcalendar/lib/moment.min.js"></script>
+    <script src="fullcalendar/fullcalendar.js"></script>
+    <script type="text/javascript" src="fullcalendar/gcal.js"></script>
+
+    <script type="text/javascript">
 
       $(document).ready(function() {
-          $('#calendar').fullCalendar({
-              googleCalendarApiKey: 'AIzaSyCqz6rvxl4WuGlbEyJwQJ6_4j53UdD1R-k',
+          $("#calendar").fullCalendar({
+              googleCalendarApiKey: "AIzaSyCqz6rvxl4WuGlbEyJwQJ6_4j53UdD1R-k",
               events: {
-                  googleCalendarId: '393mio7q745fb3aqk44vhhk3i0@group.calendar.google.com'
+                  googleCalendarId: "393mio7q745fb3aqk44vhhk3i0@group.calendar.google.com"
               }
           });
       });
+
+      $("#calendar").fullCalendar("render");
 
     </script>
 
@@ -120,7 +122,7 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
