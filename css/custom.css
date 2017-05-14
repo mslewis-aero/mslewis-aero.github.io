@@ -1,4 +1,4 @@
-.verticalContainer{
+.vertical-container{
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -6,7 +6,7 @@
   //background-color: purple;
 }
 
-.singleOfficer{
+.single-officer{
   //flex-grow: 1;
   display: flex;
   flex-direction: row;
@@ -14,12 +14,12 @@
   align-items: center;
 }
 
-.officerPicture{
+.officer-picture{
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-.officerDescription{
+.officer-description{
   flex-grow: 0;
   flex-shrink: 1;
   margin: 10px;
@@ -41,7 +41,7 @@
   background-color: white;
 }
 
-.pdfViewer{
+.pdf-viewer{
   display: flex;
   flex-grow: 1;
   height: 800px;
@@ -63,7 +63,7 @@
     flex-direction: column;
   }
 
-  .verticalContainer{
+  .vertical-container{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -71,11 +71,15 @@
     //background-color: purple;
   }
 
-  .singleOfficer{
+  .single-officer{
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+  }
+
+  .officer-description-collapse{
+    font-size: 4vw;
   }
 }
