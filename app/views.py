@@ -16,7 +16,7 @@ def programCommittees():
 
 @app.route('/calendar')
 def calendar():
-    return render_template('calendar.html')
+    return render_template('calendar.html',calendar=True)
 
 @app.route('/newsletters')
 def newsletters():

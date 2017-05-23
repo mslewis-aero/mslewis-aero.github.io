@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
-{% block content %}
-<!-- <link rel="stylesheet" href="../static/fullcalendar/fullcalendar.css" /> -->
+{% block headBlock %}
+<link rel="stylesheet" href="../static/fullcalendar/fullcalendar.css" />
 <script src="../static/fullcalendar/lib/jquery.min.js"></script>
 <script src="../static/fullcalendar/lib/moment.min.js"></script>
 <script src="../static/fullcalendar/fullcalendar.js"></script>
 <script type="text/javascript" src="../static/fullcalendar/gcal.js"></script>
-
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/bootstrap.js"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {
@@ -21,7 +22,9 @@
   $("#calendar").fullCalendar("render");
 
 </script>
+{% endblock %}
 
+{% block content %}
     <div class="container">
       <div class="row">
           <div class="box">
