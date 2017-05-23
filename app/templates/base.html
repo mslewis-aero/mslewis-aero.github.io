@@ -12,13 +12,13 @@
     <title>K of C Council 13527</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="../static/css/business-casual.css" rel="stylesheet">
 
     <!-- Michael Lewis's Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../static/css/custom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -31,26 +31,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
-    <script src="fullcalendar/lib/jquery.min.js"></script>
-    <script src="fullcalendar/lib/moment.min.js"></script>
-    <script src="fullcalendar/fullcalendar.js"></script>
-    <script type="text/javascript" src="fullcalendar/gcal.js"></script>
-
-    <script type="text/javascript">
-
-      $(document).ready(function() {
-          $("#calendar").fullCalendar({
-              googleCalendarApiKey: "AIzaSyCqz6rvxl4WuGlbEyJwQJ6_4j53UdD1R-k",
-              events: {
-                  googleCalendarId: "393mio7q745fb3aqk44vhhk3i0@group.calendar.google.com"
-              }
-          });
-      });
-
-      $("#calendar").fullCalendar("render");
-
-    </script>
+    <link rel="stylesheet" href="../static/fullcalendar/fullcalendar.css" />
 
 </head>
 
@@ -77,22 +58,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-flex">
                   <li class="navbar-item">
-                      <a href="index.html">Home</a>
+                      <a href="/index">Home</a>
                   </li>
                   <li class="navbar-item">
-                      <a href="officers.html">Officers</a>
+                      <a href="/officers">Officers</a>
                   </li>
                   <li class="navbar-item">
-                      <a href="servicePrograms.html">Program Committees</a>
+                      <a href="/programCommittees">Program Committees</a>
                   </li>
                   <li class="navbar-item">
-                      <a href="calendar.html">Calendar</a>
+                      <a href="/calendar">Calendar</a>
                   </li>
                   <li class="navbar-item">
-                      <a href="newsletters.html">Newsletters</a>
+                      <a href="/newsletters">Newsletters</a>
                   </li>
                   <li class="navbar-item">
-                      <a href="contact.html">Contact</a>
+                      <a href="/contact">Contact</a>
                   </li>
                 </ul>
             </div>
@@ -101,15 +82,7 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container">
-      <div class="row">
-          <div class="box">
-            <div id="calendar"></div>
-          </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
+    {% block content %}{% endblock %}
 
     <footer>
         <div class="container">
@@ -122,13 +95,10 @@
     </footer>
 
     <!-- jQuery -->
-    <!-- <script src="js/jquery.js"></script> -->
+    <script src="../static/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
-
-    <!-- FullCalendar JavaScript -->
-
+    <script src="../static/js/bootstrap.js"></script>
 
 </body>
 
