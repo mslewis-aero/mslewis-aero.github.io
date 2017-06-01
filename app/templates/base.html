@@ -83,6 +83,16 @@
         <!-- /.container -->
     </nav>
 
+    {% with messages = get_flashed_messages() %}
+       {% if messages %}
+          <ul>
+            {% for message in messages %}
+               <li background-color="white">{{ message }}</li>
+            {% endfor %}
+          </ul>
+      {% endif %}
+    {% endwith %}
+
     {% block content %}{% endblock %}
 
     <footer>
@@ -100,6 +110,7 @@
     <!-- <script src="../static/fullcalendar/lib/jquery.min.js"></script> -->
     {% else %}
     <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/custom-js.js"></script>
     {% endif %}
 
     <!-- Bootstrap Core JavaScript -->
