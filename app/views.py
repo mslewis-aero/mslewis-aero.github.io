@@ -11,9 +11,9 @@ def index():
 def officers():
     return render_template('officers.html')
 
-@app.route('/programCommittees')
-def programCommittees():
-    return render_template('programCommittees.html')
+@app.route('/activities')
+def activities():
+    return render_template('activities.html')
 
 @app.route('/calendar')
 def calendar():

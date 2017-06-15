@@ -121,3 +121,11 @@
 .show{
   display: block;
 }
+
+.footer{
+  padding: 0px;
+}
+
+.index-link, .index-link:hover{
+  color: white;
+}
