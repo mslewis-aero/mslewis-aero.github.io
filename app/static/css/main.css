@@ -1,0 +1,92 @@
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  background-color: rgb(131,167,212);
+
+  font-family: sans-serif;
+}
+
+p{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.header{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  height: 120px;
+  width: 100%;
+  background-color: rgb(131,167,212);
+}
+
+.brand{
+
+}
+
+.council-title{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.sign-in{
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+
+  background-color: red;
+}
+
+.navbar{
+  /*display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: stretch;*/
+  
+  background-color: rgb(131,167,212);
+
+  background: linear-gradient(#645e53 0,#363128 100%);
+  height: 60px;
+  width: 100%;
+}
+
+.nav-button{
+  box-sizing: border-box;
+
+  color: white;
+  height: 60px;
+  border-left: 1px solid #645e53;
+  border-right: 1px solid #363128;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
