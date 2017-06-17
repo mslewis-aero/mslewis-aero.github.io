@@ -1,7 +1,7 @@
-body{
+html, body{
   margin: 0 !important;
   padding: 0 !important;
-  
+
   background-color: rgb(131,167,212);
 
   font-family: sans-serif;
@@ -11,6 +11,7 @@ p{
   margin-top: 7px;
   margin-bottom: 7px;
 }
+
 .header{
   display: flex;
   flex-flow: row;
@@ -19,7 +20,6 @@ p{
 
   height: 120px;
   width: 100%;
-  background-color: rgb(131,167,212);
 }
 
 .brand{
@@ -47,13 +47,6 @@ p{
 }
 
 .navbar{
-  /*display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: stretch;*/
-  
-  background-color: rgb(131,167,212);
-
   background: linear-gradient(#645e53 0,#363128 100%);
   height: 60px;
   width: 100%;
@@ -63,9 +56,22 @@ p{
   box-sizing: border-box;
 
   color: white;
-  height: 60px;
+  height: 59px;
   border-left: 1px solid #645e53;
   border-right: 1px solid #363128;
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+}
+.carousel-container{
+  height: 500px;
+}
+
+.my-inner{
+  height: 100%;
+  width: 100%;
 }
 
 [class*="col-"] {
