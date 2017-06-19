@@ -12,6 +12,11 @@ p{
   margin-bottom: 7px;
 }
 
+hr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .header{
   display: flex;
   flex-flow: row;
@@ -20,6 +25,13 @@ p{
 
   height: 120px;
   width: 100%;
+}
+
+.page-border{
+  border: 20px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(131,167,212);
 }
 
 .brand{
@@ -50,6 +62,7 @@ p{
   background: linear-gradient(#645e53 0,#363128 100%);
   height: 60px;
   width: 100%;
+  margin-bottom: 0px;
 }
 
 .nav-button{
@@ -61,12 +74,47 @@ p{
   border-right: 1px solid #363128;
 }
 
-.container {
-  margin: auto;
-  width: 1000px;
-}
 .carousel-container{
+  margin: auto;
   height: 500px;
+  max-width: 1000px;
+}
+
+.content{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section{
+  max-width: 1000px;
+}
+
+.vertical-container{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  //background-color: purple;
+}
+
+.single-officer{
+  //flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.officer-picture{
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.officer-description{
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin: 10px;
+  //background-color: yellow;
 }
 
 .my-inner{
