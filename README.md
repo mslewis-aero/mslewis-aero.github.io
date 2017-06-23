@@ -1,1 +1,3 @@
 This is the website for the Knights of Columbus Council 13527
+
+Testing out git on the tablet...
